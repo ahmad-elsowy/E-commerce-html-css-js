@@ -45,7 +45,19 @@ body{
 }
 
 
-
+.normal-btn{
+    padding: 5px 10px ;
+    background-color: #fff;
+    font-size: 15px;
+    border: 2px solid var(--border-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.normal-btn:hover{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+}
 
 
 /* --------------------start header --------------------*/
@@ -210,8 +222,6 @@ body{
 }
 .intro .content h3{
     margin-bottom: 20px;
-
-
 }
 .intro .content h2{
 font-size: 40px;
@@ -331,7 +341,6 @@ font-size: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 .products h1{
     margin: 0 auto 5px;
@@ -359,7 +368,6 @@ font-size: 40px;
     margin: 20px 0;
     position: relative;
     transition: 0.3s;
-   
 }
 
 .products .product-boxes .pro-box:hover{
@@ -444,3 +452,203 @@ font-size: 40px;
     }
 }
 /*------------- End product  --------------*/
+
+/*------------- Start Services  --------------*/
+
+.services{
+    background-image: url("/images/banner/b1.jpg");
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;    
+}
+.services h2{
+    color: #fff;
+    font-size: 20px;
+}
+.services p{
+color: #fff;
+font-size: 30px;
+font-weight: 600;
+text-align: center;
+}
+.services p span{
+    color: red;
+}
+
+@media (max-width:767px) {
+    .services p{
+        font-size: 20px;
+        font-weight: 400;
+        }
+}
+
+
+/*------------- End   Services  --------------*/
+
+
+
+
+
+/*------------- start arrivals  --------------*/
+.arrivals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.arrivals h1{
+    margin: 0 auto 5px;
+    font-size: 40px;
+}
+.arrivals p{
+    margin: 0 auto 10px;
+    font-size: 15px;
+    color: #777;
+}
+.arrivals .product-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.arrivals .product-boxes .pro-box{
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    transition: 0.3s;
+   
+}
+
+.arrivals .product-boxes .pro-box:hover{
+    box-shadow: 0px 1px 8px #9e9e9e;
+}
+.arrivals .product-boxes .pro-box img{
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.arrivals .product-boxes .pro-box h3{
+    color: #777;
+    font-size: 15px;
+}
+.arrivals .product-boxes .pro-box h2{
+    font-size: 17px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+.arrivals .product-boxes .pro-box:hover h2{
+    color: var(--main-color);
+}
+.arrivals .product-boxes .pro-box .stars{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.arrivals .product-boxes .pro-box .stars li i{
+    color: orange;
+}
+.arrivals .product-boxes .pro-box .stars li i.active{
+    color: orange;
+   
+}
+.arrivals .product-boxes .pro-box span{
+    color: var(--main-color);
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+.arrivals .product-boxes .pro-box i.shop-cart{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.arrivals .product-boxes .pro-box i.shop-cart:hover{
+    background-color: var(--main-color);
+}
+
+
+@media (max-width:676px) {
+    .arrivals .product-boxes{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+
+    }
+
+    .arrivals .product-boxes .pro-box h2{
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+
+
+/*------------- End arrivals  --------------*/
+
+/*------------- start banners  --------------*/
+
+.banners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.banners div{
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+.banners .one{
+    background-image: url("/images/banner/b17.jpg");
+    background-repeat: no-repeat;
+    
+}
+.banners .two{
+    background-image: url("/images/banner/b18.jpg");
+    background-repeat: no-repeat;
+}
+.banners div h3{
+    font-size: 20px;
+    font-weight: 200;
+}
+.banners div h2{
+
+}
+.banners div p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+@media (max-width:992px) {
+    .banners{
+        flex-direction: column;
+       
+    }
+    .banners div{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+/*------------- End banners  --------------*/
