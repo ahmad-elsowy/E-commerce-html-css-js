@@ -651,4 +651,262 @@ text-align: center;
     }
     
 }
+@media (max-width : 767px) {
+    .banners .two,
+    .banners .one{
+        background-position:top ;
+    }
+}
 /*------------- End banners  --------------*/
+
+/* start banner two */
+.banner-two{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding:0  0 30px 0;
+   
+
+}
+.banner-two div{
+   max-width: 30%;
+   height: 20vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 20px;
+}
+.banner-two div h2{
+    color: white;
+
+}
+.banner-two div p{
+    color: red;
+    font-size: 20px;
+}
+.banner-two .one{
+    background-image: url("/images/banner/b16.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-two .two{
+    background-image: url("/images/banner/b18.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.banner-two .three{
+    background-image: url("/images/blog/b1.jpg");
+    background-size: cover;  
+}
+
+@media (max-width:767px) {
+    .banner-two{
+       width: 100%;
+       justify-content: space-evenly;
+    }
+    .banner-two div{
+        padding: 10px;
+    }
+    .banner-two div h2{
+        font-size: 15px;
+    }
+    .banner-two div p{
+        font-size: 12px;
+    }
+    
+}
+
+/* End banner two */
+
+/* start newsletters */
+.newsletter{
+    background-image: url("/images/banner/b2.jpg");
+    background-size:cover ;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+.newsletter .main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.newsletter .main-content .content{
+    color: #fff;
+    width: 50%;
+}
+.newsletter .main-content .content h1{
+    font-size: 29px;
+}
+.newsletter .main-content .content p{
+    font-size: 15px;
+    color: #777;
+
+}
+.newsletter .main-content .content p span{
+    color: orange;
+}
+.newsletter .main-content .myform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter .main-content .myform input{
+    padding: 10px;
+    max-width: 300px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+   
+}
+.newsletter .main-content .myform input:focus{
+    outline: none;
+}
+.newsletter .main-content .myform  button{
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    outline: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+    cursor: pointer;
+    
+}
+@media (max-width:767px) {
+    .newsletter .main-content{
+       align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .newsletter .main-content .content{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .newsletter .main-content .content h1{
+        font-size: 20px;
+    }
+    .newsletter .main-content .content p{
+        font-size: 13px;
+    }
+}
+
+
+/* End newsletters */
+
+/* start footer */
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.footer .contact-footer {
+    margin-right: 20px;
+}
+.footer .contact-footer h2{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.footer .contact-footer p{
+   white-space: nowrap;
+   font-size: 15px;
+}
+
+
+.footer .contact-footer .social{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer .contact-footer .social li{
+    padding-right: 10px;
+  
+}
+.footer .contact-footer .social i{
+    color: var(--header-color);
+}
+
+.footer .about-footer{
+    
+    margin-right:40px ;
+   
+}
+
+.footer   h2{
+    font-size: 20px;
+    padding: 40px 0 20px 0 ;
+}
+.footer   .links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.footer   .links a{
+    text-decoration: none;
+    color: #777;
+    margin-bottom: 10px;
+    transition: 0.3s;
+
+}
+.footer   .links a:hover{
+    color: var(--main-color);
+}
+
+.footer .account-footer{
+    margin-right: 20px;
+}
+
+.footer .install p{
+    color: #777;
+    padding: 0 0 10px 0;
+
+}
+.footer .install div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    max-width: 100%;
+}
+.footer .install div img{
+  border: 1px solid var(--border-color);
+  margin: 0 5px 0  0;
+  transition: 0.3s;
+}
+.footer .install div img:hover{
+    border-color: var(--main-color);
+}
+.footer p.copy{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width:767px) {
+    .footer{
+padding: 40px 20px;
+    }
+    .footer .contact-footer p{
+        white-space: nowrap;
+        font-size: 11px;
+        padding-bottom:5px ;
+     }
+    
+    .footer .install img{
+        width: 50%;
+    }
+}
+/* End footer */
+
+
