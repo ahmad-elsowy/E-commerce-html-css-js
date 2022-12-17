@@ -1,0 +1,111 @@
+.cart-model{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.cart-model .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.cart-model .product .main-image{
+    width: 100%;
+}
+.cart-model .product .main-image img{
+    width: 100%;
+    border-radius: 6px;
+}
+.cart-model .product .sub-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.cart-model .product .sub-image img{
+  
+    max-width: 23%;
+    border-radius: 6px;
+     
+
+}
+.cart-model .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+    
+}
+.cart-model .main-content h3{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.cart-model .main-content h2{
+    padding-bottom: 25px;
+}
+.cart-model .main-content span{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+
+}
+
+.cart-model .main-content select{
+    margin-bottom: 20px;
+}
+.cart-model .main-content select:focus{
+    outline: none;
+    
+}
+.cart-model .main-content div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+.cart-model .main-content div input{
+    width: 40px;
+    height: 40px;
+}
+.cart-model .main-content div input:focus{
+    outline: none;
+}
+.cart-model .main-content div button{
+    padding: 10px 20px; 
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}   
+
+.cart-model .main-content p{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #777;
+}
+
+@media (max-width : 767px) {
+    .cart-model{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart-model .product{
+        width: 100%;
+    }
+    .cart-model .main-content{
+        width: 100%;
+    }
+    .cart-model .main-content p{
+        font-size: 15px;
+    }
+    .cart-model .product{
+        padding: 20px;
+    }
+    
+}

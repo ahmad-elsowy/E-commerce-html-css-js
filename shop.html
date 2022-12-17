@@ -58,7 +58,7 @@
 
 <section class="products container padding-sec">
     <div class="product-boxes">
-        <div class="pro-box">
+        <div class="pro-box one">
             <img src="/images/products/f1.jpg" alt="">
             <h3>adidas</h3>
             <h2>Cartoon Astronout T-shirts</h2>
@@ -370,6 +370,19 @@
 </section>
 
 
-<script src="/js/main.js"></script>
+
+<!-- <script src="/js/main.js"></script> -->
+
+<script>
+    let popupCart =  document.querySelectorAll(".products .product-boxes .pro-box")
+
+    popupCart.forEach(e=>{
+        e.onclick = function(){
+            window.location.href = "cart.html"
+        }
+    })
+
+
+ </script>
 </body>
 </html>
