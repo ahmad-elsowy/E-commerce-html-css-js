@@ -1,0 +1,55 @@
+.talk{
+    background-image: url("/images/about/banner.png");
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.contact .main-content{
+    padding: 20px 0;
+    
+}
+.contact .main-content span{
+
+}
+.contact .main-content h1{
+
+}
+.contact .main-content h3{
+
+}
+.contact .main-content .touch{
+
+}
+.contact .main-content .touch li{
+
+}
+.contact .main-content .touch li i{
+
+}
+.contact .main-content .touch li p{
+
+}
+
+.contact .map{
+
+}
+
+
+@media (max-width:676px) {
+    .talk p{
+        font-size: 15px;
+    }
+}
