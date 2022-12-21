@@ -15,41 +15,153 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    
 }
 .contact .main-content{
     padding: 20px 0;
+    width: 50%;
+   
     
 }
-.contact .main-content span{
 
-}
-.contact .main-content h1{
-
-}
-.contact .main-content h3{
-
-}
 .contact .main-content .touch{
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
 }
 .contact .main-content .touch li{
-
+    list-style: none;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
 }
 .contact .main-content .touch li i{
-
-}
-.contact .main-content .touch li p{
-
+    margin: 0 20px 0 0;
 }
 
-.contact .map{
+.contact .map iframe{
+    width:600px;
+    height:450px ;
+    border: 0; 
 
 }
 
+.auther{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    margin-bottom: 20px;
+    gap : 40px
+}
 
-@media (max-width:676px) {
+.auther .form{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+
+}
+
+.auther .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+.auther .form form input{
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+    width: 100%;
+    
+}
+.auther .form form input:focus{
+    outline: none;
+}
+
+.auther .form form textarea{
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+}
+.auther .form form textarea:focus{
+    outline: none;
+}
+.auther .form form button{
+    padding: 5px 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.auther .auther-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+.auther .auther-boxes .box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+}
+.auther .auther-boxes .box img{
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+.auther .auther-boxes .box .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.auther .auther-boxes .box .main-content span{
+    white-space: nowrap;
+    color: #777;
+}
+@media (max-width:700px) {
     .talk p{
         font-size: 15px;
     }
+    .contact{
+        flex-direction: column;
+        width: 95%;
+        
+    }
+    .contact .main-content{
+        width: 100%;    
+    }
+    .contact .map iframe{
+        width: 90vw;
+        height:30vh;
+    }
+    .auther{
+        flex-direction: column;
+        padding: 10px;
+        width: 95%;
+    }
+
+    .auther .form{
+      width: 100%;
+    }
 }
+
+
