@@ -25,12 +25,12 @@
     color: rgba(245, 245, 245, 0.521)
 }
 
- table{
+.table-content table{
     width: 100%;
     position: relative;
     
 }
- table::before {
+.table-content table::before {
     position: absolute;
     content: '';
     background-color: #777;
@@ -51,7 +51,7 @@
     width: 100px;
     border-radius: 6px;
 }
-tr td:first-child div{
+.table-content tr td:first-child div{
     font-size: 15px;
     font-weight: bold;
     border: 1px solid #777;
@@ -64,17 +64,86 @@ tr td:first-child div{
     margin: auto;
     cursor: pointer;
 }
-tr td:first-child div:active{
+.table-content tr td:first-child div:active{
     font-size:10px ;
 }
-tr td input{
+.table-content tr td input{
     width: 50px;
     height: 40px;
 }
-tr td input:focus{
+.table-content tr td input:focus{
     outline: none;
 }
 
+
+
+.coupon-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.coupon-check .coupon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #eee;
+    width: 35%;
+    
+}
+.coupon-check .coupon h2{
+
+}
+.coupon-check .coupon .form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.coupon-check .coupon .form input{
+    flex: 1;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+}
+.coupon-check .coupon .form input:focus{
+    outline: none;
+}
+.coupon-check .coupon .form button{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: var(--main-color);
+    border:1px solid var(--main-color);
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.coupon-check .cart-table{
+    background-color: #ccc;
+    width: 50%;
+
+}
+.coupon-check .cart-table h2{
+
+}
+.coupon-check .cart-table table{
+
+}
+.coupon-check .cart-table table tr{
+
+}
+.coupon-check .cart-table table td{
+
+}
+.coupon-check .cart-table table td span{
+
+}
+.coupon-check .cart-table button{
+
+}
 
 
 @media (max-width:767px) {
