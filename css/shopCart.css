@@ -1,0 +1,5 @@
+.header .content .nav-bar a.active i,
+.header .content .mobile a.active i{
+    color: var(--main-color);
+}
+

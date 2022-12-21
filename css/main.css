@@ -123,6 +123,7 @@ body{
     transition: 0.3s;
     
 }
+
 .header .nav-bar li a.active,
 .header .nav-bar li a:hover,
 .header .nav-bar i:hover{
@@ -136,11 +137,19 @@ body{
     font-size: 20px;
     padding: 10px 20px;
     cursor: pointer;
+    color: var(--header-color);
+ 
+}
+.header .nav-bar .shop-cart:hover{
+    color: var(--main-color);
 }
 
 
 
-
+.header .content .mobile a i{
+    color: var(--header-color);
+    font-size: 25px;
+}
 .header .content .mobile .open-nav-bar{
     display: flex;  
     flex-direction: column;

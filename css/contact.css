@@ -25,6 +25,7 @@
     
 }
 
+<<<<<<< HEAD
 .contact .main-content .touch{
     display: flex;
     flex-direction: column;
@@ -68,6 +69,34 @@
     gap: 20px;
     flex: 1;
 
+=======
+}
+.contact .main-content h1{
+
+}
+.contact .main-content h3{
+    margin-bottom: 20px;
+}
+.contact .main-content .touch{
+    list-style: none;
+}
+.contact .main-content .touch li{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+.contact .main-content .touch li i{
+    margin-right: 15px;
+}
+.contact .main-content .touch li p{
+    color: #777;
+}
+
+.contact .map{
+    width: 50%;
+>>>>>>> a3810b68fe39de6bf9c11379f5049e696e186db0
 }
 
 .auther .form form{
