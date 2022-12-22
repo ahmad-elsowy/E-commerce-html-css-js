@@ -2,9 +2,6 @@
 .header .content .mobile a.active i{
     color: var(--main-color);
 }
-
-
-
 .cart{
     background-image: url("/images/banner/b1.jpg");
     background-size: cover;
@@ -44,7 +41,7 @@
 }
 .table-content td{
     text-align: center;
-    padding-top: 20px;
+    padding: 10px;
 }
 
 .table-content tr td img{
@@ -68,14 +65,12 @@
     font-size:10px ;
 }
 .table-content tr td input{
-    width: 50px;
+    width: 80px;
     height: 40px;
 }
 .table-content tr td input:focus{
     outline: none;
 }
-
-
 
 .coupon-check{
     display: flex;
@@ -89,12 +84,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 15px;
-    background-color: #eee;
     width: 35%;
     
 }
 .coupon-check .coupon h2{
-
+padding-left: 10px ;
 }
 .coupon-check .coupon .form{
     width: 100%;
@@ -122,31 +116,42 @@
 }
 
 .coupon-check .cart-table{
-    background-color: #ccc;
+    border: 1px solid var(--border-color);
     width: 50%;
-
+    padding: 20px;   
 }
-.coupon-check .cart-table h2{
 
-}
 .coupon-check .cart-table table{
+    width: 100%;
+    margin: 15px 0;
 
 }
-.coupon-check .cart-table table tr{
-
+.coupon-check .cart-table table,
+.coupon-check .cart-table table td,
+.coupon-check .cart-table table th{
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
 }
 .coupon-check .cart-table table td{
-
+    padding: 5px;
+    color: #777;
 }
 .coupon-check .cart-table table td span{
-
+    color: #000;
+    font-weight: bold;
 }
 .coupon-check .cart-table button{
-
+    padding: 5px 10px ;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    border: 1px solid var(--main-color) ;
+    outline: none;
 }
 
 
-@media (max-width:767px) {
+@media (max-width:700px) {
     .stayhome h1{
         font-size: 30px;
       
@@ -155,6 +160,23 @@
         font-size: 15px;
       
     }
-    
+    .table-content{
+        overflow-x: scroll;
+    }
+    .table-content tr td input{
+        width: 50px;
+    }
+    .coupon-check {
+        padding: 20px;
+        flex-direction: column;
+        
+    }
+    .coupon-check .coupon{
+        width: 100%;
+        
+    }
+    .coupon-check .cart-table {
+        width: 100%;
+    }
 }
 
